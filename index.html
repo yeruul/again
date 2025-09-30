@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цаг агаарын апп</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h2>Цаг агаарын мэдээлэл</h2>
+
+    <label for="country">Улс:</label>
+    <select id="country" onchange="loadCities()">
+      <option value="MN">Монгол</option>
+    </select>
+
+    <label for="city">Аймаг/Хот:</label>
+    <select id="city">
+      <option value="Ulaanbaatar">Улаанбаатар</option>
+      <option value="Darkhan">Дархан</option>
+      <option value="Erdenet">Эрдэнэт</option>
+      <option value="Choibalsan">Чойбалсан</option>
+      <option value="Mörön">Мөрөн</option>
+      <option value="Khovd">Ховд</option>
+      <option value="Ölgii">Өлгий</option>
+    </select>
+
+    <button onclick="getWeather()">Цаг агаар авах</button>
+
+    <div class="current-weather">
+      <h3 id="city-name">---</h3>
+      <img id="icon" src="" alt="Weather Icon">
+      <h1 id="temp">--°C</h1>
+      <p id="description">---</p>
+      <p id="feels">---</p>
+      <p>💨 Салхи: <span id="wind">--</span></p>
+      <p>💧 Чийгшил: <span id="humidity">--</span></p>
+    </div>
+
+    <h3>5 өдрийн урьдчилсан мэдээ</h3>
+    <div id="forecast" class="forecast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  width: 90%;
+  max-width: 420px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.current-weather img {
+  width: 100px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.forecast .day {
+  flex: 1;
+  background: #2a2a2a;
+  padding: 10px;
+  border-radius: 12px;
+}
