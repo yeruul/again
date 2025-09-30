@@ -1,4 +1,4 @@
-const apiKey = "298b95adcad4e9a5551a6bdc3d62cc7e"; 
+const apiKey = "6ea16ec3fab7f46924e91d388d0c52c5"; 
 
 function loadCities() {
   // одоогоор зөвхөн Монгол тул хот/аймаг сонголт өөрчлөгдөхгүй
@@ -48,3 +48,4 @@ async function getWeather() {
     alert("⚠️ Алдаа гарлаа. Сүлжээ эсвэл API key шалгана уу.");
   }
 }
+
